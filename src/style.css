@@ -1,0 +1,703 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,700;1,300&family=Roboto:wght@400;700&family=Urbanist:wght@300;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Oswald:wght@600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,700;1,300&family=Roboto:wght@400;700&family=Urbanist:wght@300;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+
+}
+
+:root{
+    --background-cor: #121212;
+    --header: #18181C;
+    --btn: #3995e0;
+    --cor-descontos:  rgb(0, 116, 228);
+    --destaques: #2A2A2A;
+    --setas: #333333;
+    --fonte-cinza: #828486;
+    --fundo-pesquisar: #202020;
+}
+
+body{
+    background-color: var(--background-cor);
+    height: 100vh;
+}
+
+header{
+    display: flex;
+    background-color: var(--header);
+    padding: 20px;
+
+
+}
+
+header ul{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    color: var(--fonte-cinza);
+    align-items: center;
+    padding-left: 30px;
+    font-weight: 500;
+    font-size: 15px;
+
+}
+
+header .loja{
+    color: white;
+    font-size: 1.5em;
+    font-family: 'Oswald', sans-serif;
+}
+
+.logo img{
+    width: 40px;
+    border-right: 2px solid var(--setas);
+    padding-right: 30px;
+}
+
+.profile {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; /* Adicionado para centralizar verticalmente */
+    flex-grow: 1; /* Permite que a div .profile ocupe todo o espaço disponível */
+
+}
+
+.btn-download {
+    background-color: var(--btn);
+    padding: 8px 12px;
+    border: none;
+    border-radius: 8px;
+
+}
+
+
+
+main{
+
+    display: flex;
+    flex-direction: column;
+    /* height: 100vh; */
+    padding: 30px 12vw;
+}
+
+
+main nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+
+
+}
+
+
+nav ul{
+    color: var(--fonte-cinza);
+    list-style: none;
+    display: flex;
+    gap: 20px;
+
+    align-items: center;
+}
+
+nav .destacado{
+    color: white;
+}
+
+nav .carrinho{
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav .carrinho ul li{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.pesquisar{
+    display: flex;
+    background-color: var(--fundo-pesquisar);
+    justify-content: flex-start;
+    align-items: center;
+    padding: 18px;
+    border-radius: 40px;
+    gap: 10px;
+    color: var(--fonte-cinza);
+    font-size: 13px;
+    width: 180px;
+    height: 3px;
+}
+
+.pesquisar img{
+    width: 15px
+}
+
+/* PARTE DOS JOGOS LANÇAMENTOS */
+
+section.lancamentos{
+    color: white;
+    padding: 30px 0px;
+    display: flex;
+}
+
+.img-game{
+    background-image: url(https://cdn2.unrealengine.com/fortnite-chapter-4-og-overview-page-key-art-bg-1920x1080-1fbc3a1c0297.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 100%;
+    height: 60vh;
+     width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end ;
+    border-radius: 13px;
+    padding: 0px 0px 60px 60px;
+}
+
+.fortnite{
+    width: 20%;
+    padding-bottom: 30px;
+}
+
+.descricao p{
+    width: 20vw;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding-bottom: 30px;
+    line-height: 1.5em;
+
+}
+
+p.gratis{
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+
+.comprar{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    font-weight: 500;
+}
+
+.comprar button{
+    padding: 15px;
+    background-color: white;
+    border: none;
+    border-radius: 6px;
+}
+
+.lista-jogos{
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.lista-jogos ul li.selecionado{
+    display: flex;
+
+    align-items: center;
+    background-color: var(--destaques);
+    width: 230px;
+    padding: 20px;
+    margin-bottom: 5px ;
+    gap: 15px;
+    margin-left: 20px;
+    border-radius: 15px;
+
+}
+
+
+.lista-jogos ul li.others-games{
+    display: flex;
+    align-items: center;
+    padding: 18px;
+    gap: 15px;
+    margin-bottom: 5px;
+    margin-left: 20px;
+    border-radius: 15px;
+
+    transition: all 0.5s;
+}
+
+
+.lista-jogos ul li:hover{
+    background-color: var(--destaques);
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.disc{
+    display: none;
+}
+
+
+
+.lista-jogos img{
+    width: 60px;
+    border-radius: 6px;
+}
+
+/* jogos em promoção */
+
+.linha{
+    display: flex;
+    color: white;
+    justify-content: space-between;
+}
+
+.linha p.titulo{
+    font-size: 1.1em;
+    font-weight: 100px;
+}
+
+.linha span{
+    color: var(--fonte-cinza);
+    font-size: 14px;
+
+}
+
+.seta-nav{
+    display: flex;
+    gap: 20px;
+}
+
+.seta1{
+    background-color: var(--destaques);
+    padding: 7px 11px 8px 11px;
+    border-radius: 50%;
+}
+
+.barato{
+    display: flex;
+    gap: 45px;
+    list-style: none;
+}
+
+li.jogo-barato figure img{
+    width:  100%;
+    border-radius: 4px;
+    margin-top: 15px
+}
+
+.jogo-barato{
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.jogo-barato span{
+    color: var(--fonte-cinza);
+    font-size: 12px;
+    font-weight: 600;
+    padding: 8px 0px;
+}
+
+.preco{
+    display: flex;
+    gap: 3%;
+    padding-top: 8px;
+}
+
+p.joguep{
+    font-size: 1.3rem;
+    text-decoration: underline;
+}
+
+.porcentagem{
+    background-color: var(--btn);
+    padding: 5px 8px;
+    border-radius: 3px;
+    font-size: 0.8rem;
+}
+
+.desconto{
+    color: var(--fonte-cinza);
+    text-decoration: line-through;
+}
+.oferta-semana{
+    display: flex;
+    gap: 3.5%;
+    margin-top: 70px;
+}
+
+.jogo-1{
+    display: flex;
+    flex-direction: column;
+}
+.jogo-1 img{
+    width: 100%;
+
+    border-radius: 10px;
+}
+.textos-ofertas{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 20px 30px 20px;
+}
+
+.textos-ofertas h2{
+    padding-bottom: 20px;
+    font-weight: 400;
+}
+
+/* .coluna-preco{
+
+} */
+
+
+
+.texto-preco{
+    color: var(--fonte-cinza);
+    width: 95%;
+    font-size: 1rem;
+    font-weight: 500;
+    padding-bottom: 30px;
+}
+
+.textos-abaixos{
+
+    display: flex;
+    gap: 5%;
+    font-size: 19px;
+}
+.desconto-oferta{
+    background-color: rgb(0, 116, 228);
+    padding: 5px 10px;
+    text-align: center;
+    border-radius: 4.5px;
+    font-size: 10px;
+}
+.desconto-oferta2{
+    background-color: rgb(0, 116, 228);
+    padding: 5px 10px;
+    text-align: center;
+    border-radius: 4.5px;
+    font-size: 10px;
+
+}
+.navegar{
+    color: white;
+    margin-top: 10px;
+    font-size: 19px;
+
+}
+.navegar h2{
+    color: white;
+    margin-top: 10px;
+    font-size: 16px;
+}
+.navegar-desconto{
+    margin-top: 10px    ;
+}
+
+.preco-desconto{
+    text-decoration: line-through;
+}
+.jogos-gratuitos{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: #2A2A2A;
+    margin-top: 30px;
+    border-radius: 5px;
+}
+
+.jogo-gratis-1 img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+
+.todos-jogos{
+    display: flex;
+    justify-content: space-between;
+    gap: 3%;
+    padding: 0px 18px;
+}
+.jogos-top{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 15px;
+    padding-right: 10px;
+
+    color: white;
+}
+.presente{
+    margin-left: 20px;
+}   
+.jogo-gratis-1 {
+    color: white;
+}
+.btn-jogos-gratis button{
+    background: transparent;
+    border: 2px solid white;
+    width: 86px;
+    height: 34px;
+    color: white;
+    font-weight: 2px;
+    border-radius: 6px;
+}
+.btn-jogos-gratis button:hover  {
+     background-color: #828486;
+}
+
+
+.textos-jogo-gratis h2{
+    font-size: 16px;
+}
+.textos-jogo-gratis p{
+    font-size: 13px;
+    margin-top: 10px;
+}
+.textos-jogo-gratis{
+    padding: 10px;
+}
+.mais-jogos{
+    display: flex;
+    margin-top: 60px;
+    gap: 2%;
+}
+.mais-jogo-1 img{
+    width: 100%;
+}
+.mais-jogo-2 img{
+    width: 100%;
+}
+.mais-jogo-3 img{
+    width: 100%;
+}
+.mais-jogo-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 2%;
+}
+
+.mais-jogo-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 2%;
+}
+.mais-jogo-3 {
+    display: flex;
+    flex-direction: column;
+    gap: 2%;
+}
+.textos-mais-jogos h2{
+    font-size: 20px;
+    color: white;
+    margin-bottom: 20px
+}
+.textos-mais-jogos p{
+    font-size: 17px;
+    color: white;
+    margin-bottom: 20px
+}
+.txt{
+    font-size: 15px;
+    color: gray;
+}
+.jogue-gratis{
+    margin-top:30px;
+    color: white;
+}
+
+.fortnite-jogue{
+    display: flex;
+    flex-direction: column;
+}
+.top-fortnite{
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    justify-content: space-between;
+    color: white;
+}
+.modos-de-jogo{
+    display: flex;
+    gap: 3%;
+}
+.logo-modo img{
+    width: 100%;
+}
+.textos-apresenta{
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+.btn-fort button{
+    background: transparent;
+    border: 1px solid white;
+    width: 200px;
+    height: 40px;
+    color: white;
+    font-weight: 2px;
+    border-radius: 6px;
+}
+.top-fortnite h2{
+    font-size: 20px;
+}
+.caracteristica{
+    font-size: 12px;
+    font-weight: 300;
+    color: gray;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.textos-apresenta h2{
+    font-size: 16px;
+    margin-bottom: 6px;
+}
+
+.mais-jogos-4{
+    display: flex;
+    gap:3%;
+    padding-bottom: 50px;
+}
+.logo-jogo-01 figure img{
+    width: 100%;
+    border-radius: 16px;
+}
+
+.textos-jogo-01{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: white;
+}
+.textos-jogo-01 h2{
+    margin-bottom: 10px;
+}
+.textos-jogo-01 p{
+    margin-bottom: 10px;
+}
+
+.mais-jogos-4 h5{
+    font-size: 19px;
+}
+.novos-lancamentos{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0px;
+    gap: 20px
+
+}
+
+.top-lancamentos{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    width: 100%;
+    padding: 0px;
+}
+
+li.lista-jogos-lancamentos{
+    display: flex;
+    /* justify-content: ; */
+    align-items: center;
+    color: white;
+    padding-right: 200px;
+
+}
+
+.lista-sequencia{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.lista-jogos-lancamentos img{
+    width: 50px;
+    border-radius: 6px;
+    padding-top: 30px;
+    padding-right: 30px;
+}
+
+h3.lancamentos{
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.vermais{
+    background-color: var(--background-cor);
+    color: white;
+    border: 1px solid;
+    border-radius: 3px;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    font-size: 0.7em;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px 70px;
+    background-color: var(--fundo-pesquisar);
+    color: var(--fonte-cinza);
+}
+
+footer ul a{ 
+    color: rgb(177, 177, 177);
+    text-decoration: none;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+footer ul a:hover{
+    color: var(--btn);
+}
+
+footer ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.container{
+    display: flex;
+}
+
+.icons-media{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.icons-media svg{
+    width: 40px;
+}
+
+.footer-links{
+    display: flex;
+    gap: 30px;
+
+}
+hr{
+    margin: 30px 0px;
+}
+
+.copyrights{
+    font-size: 0.7rem;
+    width: 50%;
+    line-height: 20px;
+    color: rgb(177, 177, 177);
+    padding-bottom: 30px;
+}
+
+footer .politicas{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+
+}
