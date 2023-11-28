@@ -2,4 +2,4 @@
 Eu junto com meu amigo de faculdade (Luis Henrique
 luisz19) na matéria de front-end, fomos desafiados por nosso professor Ermesson. Com as habilidades adquiridas durante o semestre, a copiar um site usando HTML semântico, CSS flexbox, responsividade.
 
-Github pages: <a href=“https://marcosviictor.github.io/epic_games_clone/“>Epic Games HTML e CSS</a>
+Github pages: <a href="http://https://marcosviictor.github.io/epic_games_clone/"> Epic clone</a>
